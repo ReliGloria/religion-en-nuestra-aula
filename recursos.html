@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Recursos · Religión en nuestra aula</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f7f5ea;
+    color:#243746;
+}
+
+/* CABECERA */
+
+header{
+    padding:35px 30px 20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:48px;
+    margin:10px 0;
+    font-family:Georgia,serif;
+}
+
+header p{
+    font-size:21px;
+    color:#596b75;
+    margin:0 auto;
+    max-width:850px;
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+    max-width:1200px;
+    margin:20px auto 70px;
+    padding:20px;
+}
+
+/* TARJETAS */
+
+.recursos{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    margin-top:50px;
+}
+
+.tarjeta{
+    display:block;
+    text-decoration:none;
+    color:#243746;
+    background:white;
+    border-radius:30px;
+    padding:35px 30px;
+    min-height:300px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.10);
+    transition:transform 0.2s, box-shadow 0.2s;
+}
+
+.tarjeta:hover{
+    transform:translateY(-7px);
+    box-shadow:0 16px 35px rgba(0,0,0,0.16);
+}
+
+.icono{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.tarjeta h2{
+    font-size:27px;
+    margin:10px 0 15px;
+}
+
+.tarjeta p{
+    font-size:18px;
+    line-height:1.6;
+    color:#596b75;
+}
+
+.entrar{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 20px;
+    border-radius:20px;
+    background:#eef4ed;
+    font-weight:bold;
+}
+
+/* VOLVER */
+
+.volver{
+    display:inline-block;
+    margin-top:35px;
+    text-decoration:none;
+    color:#243746;
+    font-weight:bold;
+}
+
+/* MÓVIL */
+
+@media(max-width:800px){
+
+    .recursos{
+        grid-template-columns:1fr;
+    }
+
+    header h1{
+        font-size:38px;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<header>
+
+<p>PARA APRENDER</p>
+
+<h1>RECURSOS</h1>
+
+<p>
+Todo lo que necesitamos para aprender, jugar y crecer en nuestra fe.
+</p>
+
+</header>
+
+
+<main class="contenedor">
+
+<div class="recursos">
+
+
+<a class="tarjeta" href="material-imprimir.html">
+
+<div class="icono">🖨️</div>
+
+<h2>MATERIAL PARA IMPRIMIR</h2>
+
+<p>
+Fichas, mapas, actividades y materiales para aprender.
+</p>
+
+<span class="entrar">Entrar →</span>
+
+</a>
+
+
+<a class="tarjeta" href="material-tea.html">
+
+<div class="icono">🧩</div>
+
+<h2>MATERIAL TEA</h2>
+
+<p>
+Recursos visuales adaptados para aprender paso a paso.
+</p>
+
+<span class="entrar">Entrar →</span>
+
+</a>
+
+
+<a class="tarjeta" href="trivial.html">
+
+<div class="icono">🎲</div>
+
+<h2>TRIVIAL</h2>
+
+<p>
+Preguntas, retos y juegos para demostrar lo que sabemos.
+</p>
+
+<span class="entrar">Entrar →</span>
+
+</a>
+
+
+</div>
+
+
+<a class="volver" href="index.html">
+← Volver a la página principal
+</a>
+
+</main>
+
+</body>
+</html>
