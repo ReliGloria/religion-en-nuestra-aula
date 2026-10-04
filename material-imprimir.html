@@ -8,6 +8,13 @@
 
 <title>Material para imprimir · Religión en nuestra aula</title>
 
+<!-- Tipografías -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+
 <style>
 
 * {
@@ -16,12 +23,15 @@
 
 body {
   margin: 0;
-  background: #faf8ef;
+  background: #fffaf0;
   color: #17364f;
-  font-family: Arial, sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
-/* CABECERA */
+
+/* =========================
+   CABECERA
+========================= */
 
 header {
   text-align: center;
@@ -30,33 +40,39 @@ header {
 
 .brand {
   text-align: left;
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 42px;
+  font-size: 15px;
+  font-weight: 800;
+  margin-bottom: 38px;
+  color: #17364f;
 }
 
 .eyebrow {
   font-size: 15px;
   letter-spacing: 3px;
-  color: #68727a;
-  font-weight: bold;
+  color: #6c7b83;
+  font-weight: 800;
 }
 
 h1 {
-  font-family: Georgia, serif;
-  font-size: 54px;
-  margin: 10px 0;
-  color: #163b5b;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 58px;
+  line-height: 1;
+  margin: 8px 0 8px;
+  color: #165a91;
+  font-weight: 800;
 }
 
 .subtitle {
   font-size: 19px;
-  color: #526777;
+  color: #637782;
   margin: 0;
+  font-weight: 600;
 }
 
 
-/* CONTENEDOR */
+/* =========================
+   CONTENEDOR
+========================= */
 
 .cursos {
   max-width: 1250px;
@@ -65,84 +81,135 @@ h1 {
 }
 
 
-/* CURSO */
+/* =========================
+   CURSO
+========================= */
 
 .curso {
   background: white;
-  border-radius: 32px;
+  border-radius: 34px;
   padding: 30px;
-  margin-bottom: 35px;
-  box-shadow: 0 12px 30px rgba(40, 50, 60, 0.08);
+  margin-bottom: 38px;
   position: relative;
   overflow: hidden;
+
+  box-shadow:
+    0 10px 0 rgba(30, 70, 90, 0.04),
+    0 18px 35px rgba(40, 60, 70, 0.10);
 }
 
 
-/* DECORACIÓN SUPERIOR */
+/* Franja de color */
 
 .curso::before {
   content: "";
   display: block;
-  height: 8px;
-  border-radius: 10px;
-  margin: -30px -30px 25px;
+  height: 9px;
+  border-radius: 20px;
+  margin: -30px -30px 24px;
 }
 
 
-/* COLORES POR CURSO */
+/* Colores */
 
 .curso:nth-child(1)::before {
-  background: #f6c84c;
+  background: #ffd447;
 }
 
 .curso:nth-child(2)::before {
-  background: #75c878;
+  background: #73cf78;
+}
+
+.curso:nth-child(3)::before {
+  background: #55bde8;
+}
+
+.curso:nth-child(4)::before {
+  background: #ff8f70;
+}
+
+.curso:nth-child(5)::before {
+  background: #b78ae8;
+}
+
+.curso:nth-child(6)::before {
+  background: #ef79a7;
 }
 
 
-/* TITULO CURSO */
+/* =========================
+   CABECERA CURSO
+========================= */
 
 .cabecera-curso {
   display: flex;
   align-items: center;
-  gap: 18px;
-  margin-bottom: 22px;
+  gap: 17px;
+  margin-bottom: 24px;
 }
 
 .icono-curso {
-  width: 58px;
-  height: 58px;
-  border-radius: 18px;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 31px;
-  flex-shrink: 0;
+
+  font-size: 32px;
+
+  box-shadow: 0 5px 0 rgba(0,0,0,0.04);
 }
 
+
+/* Colores iconos */
+
 .curso:nth-child(1) .icono-curso {
-  background: #fff1bd;
+  background: #fff0b5;
 }
 
 .curso:nth-child(2) .icono-curso {
-  background: #dff3df;
+  background: #dcf5dc;
 }
 
+.curso:nth-child(3) .icono-curso {
+  background: #d9f2fc;
+}
+
+.curso:nth-child(4) .icono-curso {
+  background: #ffe1d7;
+}
+
+.curso:nth-child(5) .icono-curso {
+  background: #eee1ff;
+}
+
+.curso:nth-child(6) .icono-curso {
+  background: #ffe0eb;
+}
+
+
 h2 {
-  font-family: Georgia, serif;
-  font-size: 31px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 34px;
+  line-height: 1;
   margin: 0 0 4px;
   color: #17364f;
+  font-weight: 800;
 }
 
 .curso-descripcion {
   margin: 0;
-  color: #687782;
+  color: #70808a;
   font-size: 15px;
+  font-weight: 600;
 }
 
 
-/* UNIDADES */
+/* =========================
+   UNIDADES
+========================= */
 
 .unidades {
   display: grid;
@@ -151,121 +218,262 @@ h2 {
 }
 
 
-/* TARJETA */
+/* =========================
+   TARJETAS
+========================= */
 
 .unidad {
-  background: #f5f8f5;
-  border-radius: 24px;
+  background: #f5faf5;
+  border-radius: 25px;
   overflow: hidden;
+
   text-decoration: none;
   color: #17364f;
-  border: 2px solid transparent;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  border: 3px solid transparent;
+
+  box-shadow: 0 5px 0 rgba(30,70,90,0.04);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .unidad:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(40, 50, 60, 0.13);
+  transform: translateY(-7px);
+
+  box-shadow:
+    0 8px 0 rgba(30,70,90,0.05),
+    0 15px 25px rgba(30,70,90,0.13);
 }
 
 
-/* IMAGEN */
+/* =========================
+   PORTADAS
+========================= */
 
 .portada {
   width: 100%;
-  height: 155px;
+  height: 165px;
+
   object-fit: cover;
   display: block;
+
+  /* IMPORTANTE:
+     las imágenes permanecen EN COLOR */
+  filter: none;
+  opacity: 1;
 }
 
 
-/* INFORMACIÓN */
+/* =========================
+   INFORMACIÓN
+========================= */
 
 .info {
-  padding: 18px 20px 20px;
+  padding: 17px 20px 20px;
 }
 
 .numero {
   font-size: 12px;
-  letter-spacing: 1px;
-  font-weight: bold;
-  color: #69767e;
-  margin-bottom: 7px;
+  letter-spacing: 1.3px;
+  font-weight: 800;
+  color: #687a83;
+  margin-bottom: 5px;
 }
 
 .titulo {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.25;
-  min-height: 45px;
+  font-family: "Baloo 2", sans-serif;
+  font-size: 21px;
+  line-height: 1.12;
+  font-weight: 700;
+
+  min-height: 48px;
+
   margin-bottom: 15px;
 }
 
+
+/* =========================
+   BOTÓN
+========================= */
+
 .boton {
-  display: inline-block;
-  padding: 9px 14px;
-  border-radius: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 9px 15px;
+
+  border-radius: 15px;
+
   background: white;
+
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 800;
+
+  box-shadow: 0 3px 0 rgba(0,0,0,0.05);
 }
 
 
-/* COLORES DE LAS TARJETAS */
+/* =========================
+   COLORES TARJETAS
+========================= */
+
+
+/* PRIMERO */
 
 .curso:nth-child(1) .unidad {
-  background: #f7fbf4;
+  background: #f8fcf4;
+  border-color: #e7f2d7;
 }
 
 .curso:nth-child(1) .boton {
-  background: #fff0b8;
+  background: #fff0b5;
 }
 
+
+/* SEGUNDO */
+
 .curso:nth-child(2) .unidad {
-  background: #f3faf3;
+  background: #f4fcf4;
+  border-color: #d9efd9;
 }
 
 .curso:nth-child(2) .boton {
-  background: #d9f0d8;
+  background: #d9f2d9;
 }
 
 
-/* PRÓXIMAMENTE */
+/* TERCERO */
+
+.curso:nth-child(3) .unidad {
+  background: #f3fbfe;
+  border-color: #d4eef8;
+}
+
+.curso:nth-child(3) .boton {
+  background: #d9f2fc;
+}
+
+
+/* CUARTO */
+
+.curso:nth-child(4) .unidad {
+  background: #fff8f5;
+  border-color: #ffe1d7;
+}
+
+.curso:nth-child(4) .boton {
+  background: #ffe0d5;
+}
+
+
+/* QUINTO */
+
+.curso:nth-child(5) .unidad {
+  background: #faf7ff;
+  border-color: #e9ddfb;
+}
+
+.curso:nth-child(5) .boton {
+  background: #eadcff;
+}
+
+
+/* SEXTO */
+
+.curso:nth-child(6) .unidad {
+  background: #fff7fa;
+  border-color: #f9dce8;
+}
+
+.curso:nth-child(6) .boton {
+  background: #ffdce9;
+}
+
+
+/* =========================
+   PRÓXIMAMENTE
+========================= */
 
 .proximamente {
-  background: #f3f3ef;
   cursor: default;
 }
 
 .proximamente:hover {
-  transform: none;
-  box-shadow: none;
-}
-
-.proximamente .portada {
-  filter: grayscale(100%);
-  opacity: 0.55;
+  transform: translateY(-2px);
 }
 
 .proximamente .boton {
-  color: #7d8589;
+  color: #64747d;
 }
 
 
-/* VOLVER */
+/* =========================
+   PEQUEÑO DETALLE DECORATIVO
+========================= */
+
+.curso::after {
+  content: "✦";
+  position: absolute;
+
+  right: 25px;
+  top: 22px;
+
+  font-size: 24px;
+  opacity: 0.35;
+}
+
+.curso:nth-child(1)::after {
+  color: #e6b500;
+}
+
+.curso:nth-child(2)::after {
+  color: #45a94c;
+}
+
+.curso:nth-child(3)::after {
+  color: #249acb;
+}
+
+.curso:nth-child(4)::after {
+  color: #ed7050;
+}
+
+.curso:nth-child(5)::after {
+  color: #9b6bd1;
+}
+
+.curso:nth-child(6)::after {
+  color: #d65388;
+}
+
+
+/* =========================
+   VOLVER
+========================= */
 
 .volver {
   display: block;
+
   max-width: 1250px;
+
   margin: 0 auto 45px;
+
   padding: 0 25px;
+
   color: #17364f;
+
   text-decoration: none;
-  font-weight: bold;
+
+  font-weight: 800;
 }
 
 
-/* MÓVIL */
+/* =========================
+   MÓVIL
+========================= */
 
 @media (max-width: 900px) {
 
@@ -274,10 +482,11 @@ h2 {
   }
 
   h1 {
-    font-size: 44px;
+    font-size: 48px;
   }
 
 }
+
 
 @media (max-width: 600px) {
 
@@ -286,7 +495,11 @@ h2 {
   }
 
   h1 {
-    font-size: 36px;
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
   }
 
 }
@@ -324,9 +537,9 @@ h2 {
 <main class="cursos">
 
 
-<!-- ========================= -->
-<!-- 1.º PRIMARIA -->
-<!-- ========================= -->
+<!-- =========================
+     1.º PRIMARIA
+========================= -->
 
 <section class="curso">
 
@@ -337,15 +550,11 @@ h2 {
     </div>
 
     <div>
-
-      <h2>
-        1.º Primaria
-      </h2>
+      <h2>1.º Primaria</h2>
 
       <p class="curso-descripcion">
         Fichas y actividades para aprender juntos.
       </p>
-
     </div>
 
   </div>
@@ -353,8 +562,6 @@ h2 {
 
   <div class="unidades">
 
-
-    <!-- UNIDAD 1 -->
 
     <div class="unidad proximamente">
 
@@ -382,7 +589,6 @@ h2 {
     </div>
 
 
-    <!-- UNIDAD 2 -->
 
     <div class="unidad proximamente">
 
@@ -410,7 +616,6 @@ h2 {
     </div>
 
 
-    <!-- UNIDAD 3 -->
 
     <div class="unidad proximamente">
 
@@ -444,9 +649,9 @@ h2 {
 
 
 
-<!-- ========================= -->
-<!-- 2.º PRIMARIA -->
-<!-- ========================= -->
+<!-- =========================
+     2.º PRIMARIA
+========================= -->
 
 <section class="curso">
 
@@ -457,15 +662,11 @@ h2 {
     </div>
 
     <div>
-
-      <h2>
-        2.º Primaria
-      </h2>
+      <h2>2.º Primaria</h2>
 
       <p class="curso-descripcion">
         Fichas y actividades para aprender juntos.
       </p>
-
     </div>
 
   </div>
@@ -473,8 +674,6 @@ h2 {
 
   <div class="unidades">
 
-
-    <!-- UNIDAD 1 -->
 
     <div class="unidad proximamente">
 
@@ -502,7 +701,6 @@ h2 {
     </div>
 
 
-    <!-- UNIDAD 2 -->
 
     <div class="unidad proximamente">
 
@@ -530,7 +728,6 @@ h2 {
     </div>
 
 
-    <!-- UNIDAD 3 -->
 
     <div class="unidad proximamente">
 
