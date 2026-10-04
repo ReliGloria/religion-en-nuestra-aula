@@ -8,3 +8,23 @@
 .soft{background:#f1f6f2}.challenge{max-width:1124px;margin:0 auto 70px;background:#f7e8b8;padding:34px 40px;border-radius:30px;display:flex;justify-content:space-between;align-items:center;gap:25px}.challenge .big{font-size:4rem}
 footer{background:#28333b;color:#fff;text-align:center;padding:42px 28px}footer p{opacity:.75}
 @media(max-width:800px){.nav-links{display:none}.grid,.materials{grid-template-columns:1fr 1fr}}@media(max-width:540px){.grid,.materials{grid-template-columns:1fr}.section{padding:55px 20px}.hero-content{padding:50px 20px}.challenge{margin:0 20px 50px;padding:28px}.challenge .big{font-size:3rem}}
+.unit-card{
+    display:block;
+    padding:15px;
+    overflow:hidden;
+    border-radius:30px;
+    box-sizing:border-box;
+}
+
+.unit-card img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:22px;
+    object-fit:cover;
+}
+
+.unit-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 16px 30px rgba(0,0,0,0.15);
+}
