@@ -28,3 +28,14 @@ footer{background:#28333b;color:#fff;text-align:center;padding:42px 28px}footer 
     transform:translateY(-6px);
     box-shadow:0 16px 30px rgba(0,0,0,0.15);
 }
+.unit-summary{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.unit-summary img{
+  display:block;
+  max-width:100%;
+  height:auto;
+}
