@@ -1,1 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Educación Infantil 4 años · Religión en nuestra aula</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  background: #fff8ef;
+  color: #174b78;
+}
+
+header {
+  text-align: center;
+  padding: 45px 20px 25px;
+}
+
+.eyebrow {
+  font-size: 16px;
+  letter-spacing: 3px;
+  color: #68a8a8;
+  margin-bottom: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(34px, 6vw, 64px);
+  font-weight: 900;
+  color: #e58a62;
+}
+
+.subtitle {
+  margin-top: 12px;
+  font-size: 19px;
+  color: #55758c;
+}
+
+.contenedor {
+  max-width: 1150px;
+  margin: 20px auto 60px;
+  padding: 0 25px;
+}
+
+.tarjeta-principal {
+  background: white;
+  border-radius: 30px;
+  padding: 35px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.10);
+  border-top: 8px solid #e58a62;
+}
+
+.cabecera-curso {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.icono {
+  width: 62px;
+  height: 62px;
+  border-radius: 18px;
+  background: #ffe2d5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.cabecera-curso h2 {
+  margin: 0;
+  font-size: 32px;
+  color: #174b78;
+}
+
+.cabecera-curso p {
+  margin: 5px 0 0;
+  color: #55758c;
+  font-size: 16px;
+}
+
+.unidades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.unidad {
+  background: #fffdf8;
+  border: 2px solid #f2d7ca;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgba(0,0,0,.06);
+}
+
+.unidad-cabecera {
+  background: #fff0e9;
+  padding: 22px 22px 15px;
+}
+
+.numero {
+  display: inline-block;
+  background: #e58a62;
+  color: white;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 8px 13px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.unidad h3 {
+  margin: 0;
+  font-size: 22px;
+  color: #174b78;
+}
+
+.unidad p {
+  color: #55758c;
+  line-height: 1.5;
+}
+
+.contenido {
+  padding: 20px 22px 24px;
+}
+
+.boton {
+  display: inline-block;
+  text-decoration: none;
+  background: #ffe89c;
+  color: #174b78;
+  font-weight: 800;
+  padding: 12px 18px;
+  border-radius: 14px;
+  transition: .2s;
+}
+
+.boton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 12px rgba(0,0,0,.12);
+}
+
+.volver {
+  display: block;
+  max-width: 1150px;
+  margin: 0 auto 50px;
+  padding: 0 25px;
+}
+
+.volver a {
+  color: #174b78;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #55758c;
+  background: white;
+}
+
+@media (max-width: 750px) {
+  .unidades {
+    grid-template-columns: 1fr;
+  }
+
+  .tarjeta-principal {
+    padding: 22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="eyebrow">PARA APRENDER</div>
+  <h1>EDUCACIÓN INFANTIL</h1>
+  <div class="subtitle">
+    Descubrimos, jugamos y aprendemos nuestra fe.
+  </div>
+</header>
+
+<main class="contenedor">
+
+<section class="tarjeta-principal">
+
+  <div class="cabecera-curso">
+
+    <div class="icono">🌱</div>
+
+    <div>
+      <h2>4 años</h2>
+      <p>Materiales y actividades para aprender juntos.</p>
+    </div>
+
+  </div>
+
+  <div class="unidades">
+
+    <!-- UNIDAD 1 -->
+
+    <article class="unidad">
+
+      <div class="unidad-cabecera">
+
+        <div class="numero">1</div>
+
+        <h3>Unidad 1</h3>
+
+      </div>
+
+      <div class="contenido">
+
+        <p>
+          Material de la Unidad 1 para Educación Infantil de 4 años.
+        </p>
+
+        <a
+          class="boton"
+          href="infantil-4-unidad-1.pdf"
+          target="_blank">
+          📄 Abrir PDF
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- UNIDAD 2 -->
+
+    <article class="unidad">
+
+      <div class="unidad-cabecera">
+
+        <div class="numero">2</div>
+
+        <h3>Unidad 2</h3>
+
+      </div>
+
+      <div class="contenido">
+
+        <p>
+          Material de la Unidad 2 para Educación Infantil de 4 años.
+        </p>
+
+        <a
+          class="boton"
+          href="infantil-4-unidad-2.pdf"
+          target="_blank">
+          📄 Abrir PDF
+        </a>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+</main>
+
+<div class="volver">
+  <a href="infantil.html">← Volver a Educación Infantil</a>
+</div>
+
+<footer>
+  <strong>Religión en nuestra aula</strong>
+  <p>Un espacio para aprender, jugar y descubrir nuestra fe.</p>
+</footer>
+
+</body>
+</html>
