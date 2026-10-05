@@ -1,232 +1,221 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Educación Infantil 5 años · Religión en nuestra aula</title>
+<title>Infantil 5 años · Religión en nuestra aula</title>
 
 <style>
-
-* {
-  box-sizing: border-box;
+*{
+  box-sizing:border-box;
 }
 
-body {
-  margin: 0;
-  font-family: "Trebuchet MS", Arial, sans-serif;
-  background: #fff8ef;
-  color: #174b78;
+body{
+  margin:0;
+  font-family:"Trebuchet MS","Arial Rounded MT Bold",Arial,sans-serif;
+  background:#fffaf0;
+  color:#234b70;
 }
 
-header {
-  text-align: center;
-  padding: 45px 20px 25px;
+header{
+  text-align:center;
+  padding:45px 20px 25px;
 }
 
-.eyebrow {
-  font-size: 16px;
-  letter-spacing: 3px;
-  color: #68a8a8;
-  margin-bottom: 8px;
+.eyebrow{
+  font-size:16px;
+  letter-spacing:3px;
+  color:#8b6fb8;
+  font-weight:bold;
 }
 
-h1 {
-  margin: 0;
-  font-size: clamp(34px, 6vw, 64px);
-  font-weight: 900;
-  color: #e58a62;
+h1{
+  margin:8px 0;
+  font-size:46px;
+  color:#7b5bb5;
+  font-weight:900;
 }
 
-.subtitle {
-  margin-top: 12px;
-  font-size: 19px;
-  color: #55758c;
+.subtitle{
+  font-size:20px;
+  color:#66788a;
 }
 
-.contenedor {
-  max-width: 1150px;
-  margin: 20px auto 60px;
-  padding: 0 25px;
+.contenedor{
+  max-width:1150px;
+  margin:20px auto 60px;
+  padding:0 20px;
 }
 
-.tarjeta-principal {
-  background: white;
-  border-radius: 30px;
-  padding: 35px;
-  box-shadow: 0 12px 30px rgba(0,0,0,.10);
-  border-top: 8px solid #e58a62;
+/* CABECERA CURSO */
+
+.curso{
+  background:white;
+  border-radius:34px;
+  padding:30px;
+  box-shadow:0 12px 30px rgba(40,60,70,.10);
+  border-top:8px solid #c7a6ed;
 }
 
-.cabecera-curso {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-  margin-bottom: 30px;
+.cabecera-curso{
+  display:flex;
+  align-items:center;
+  gap:18px;
+  margin-bottom:28px;
 }
 
-.icono {
-  width: 62px;
-  height: 62px;
-  border-radius: 18px;
-  background: #ffe2d5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 32px;
+.icono-curso{
+  width:68px;
+  height:68px;
+  border-radius:20px;
+  background:#eadfff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:36px;
 }
 
-.cabecera-curso h2 {
-  margin: 0;
-  font-size: 32px;
-  color: #174b78;
+.cabecera-curso h2{
+  margin:0;
+  font-size:30px;
+  color:#6d4fa5;
 }
 
-.cabecera-curso p {
-  margin: 5px 0 0;
-  color: #55758c;
-  font-size: 16px;
+.descripcion{
+  margin:5px 0 0;
+  color:#6c7884;
 }
 
-.unidades {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+/* UNIDADES */
+
+.unidades{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
 }
 
-.unidad {
-  background: #fffdf8;
-  border: 2px solid #f2d7ca;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 5px 12px rgba(0,0,0,.06);
+.unidad{
+  border-radius:24px;
+  overflow:hidden;
+  background:#fffdf7;
+  border:2px solid #eadfff;
+  box-shadow:0 5px 12px rgba(40,60,70,.08);
 }
 
-.unidad-cabecera {
-  background: #fff0e9;
-  padding: 22px 22px 15px;
+.unidad img{
+  width:100%;
+  height:210px;
+  object-fit:contain;
+  background:#fff;
+  display:block;
 }
 
-.numero {
-  display: inline-block;
-  background: #e58a62;
-  color: white;
-  font-weight: 900;
-  font-size: 20px;
-  padding: 8px 13px;
-  border-radius: 12px;
-  margin-bottom: 12px;
+.info{
+  padding:18px 20px 20px;
 }
 
-.unidad h3 {
-  margin: 0;
-  font-size: 22px;
-  color: #174b78;
+.numero{
+  font-size:13px;
+  letter-spacing:2px;
+  font-weight:bold;
+  color:#a17ac9;
 }
 
-.contenido {
-  padding: 20px 22px 24px;
+.titulo{
+  font-size:21px;
+  font-weight:bold;
+  color:#234b70;
+  margin:8px 0 16px;
 }
 
-.contenido p {
-  color: #55758c;
-  line-height: 1.5;
-  min-height: 48px;
+.boton{
+  display:inline-block;
+  background:#ffe59b;
+  color:#68552a;
+  padding:11px 18px;
+  border-radius:18px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
-.boton {
-  display: inline-block;
-  text-decoration: none;
-  background: #ffe89c;
-  color: #174b78;
-  font-weight: 800;
-  padding: 12px 18px;
-  border-radius: 14px;
-  transition: .2s;
+.boton:hover{
+  background:#ffd86b;
 }
 
-.boton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 12px rgba(0,0,0,.12);
+.proximamente{
+  background:#f5f0ff;
+  color:#8569a8;
+  padding:11px 18px;
+  border-radius:18px;
+  display:inline-block;
+  font-weight:bold;
 }
 
-.volver {
-  display: block;
-  max-width: 1150px;
-  margin: 0 auto 50px;
-  padding: 0 25px;
+/* VOLVER */
+
+.volver{
+  display:block;
+  width:max-content;
+  margin:30px auto;
+  text-decoration:none;
+  color:#6d4fa5;
+  font-weight:bold;
 }
 
-.volver a {
-  color: #174b78;
-  font-weight: 800;
-  text-decoration: none;
+footer{
+  text-align:center;
+  padding:30px;
+  color:#7d8790;
 }
 
-footer {
-  text-align: center;
-  padding: 30px;
-  color: #55758c;
-  background: white;
-}
+/* MÓVIL */
 
-@media (max-width: 850px) {
-
-  .unidades {
-    grid-template-columns: 1fr;
+@media(max-width:750px){
+  .unidades{
+    grid-template-columns:1fr;
   }
 
-  .tarjeta-principal {
-    padding: 22px;
+  h1{
+    font-size:34px;
   }
 
+  .unidad img{
+    height:220px;
+  }
 }
-
 </style>
 </head>
-
 
 <body>
 
 <header>
 
-  <div class="eyebrow">
-    PARA APRENDER
-  </div>
+  <div class="eyebrow">PARA APRENDER Y DISFRUTAR</div>
 
-  <h1>
-    EDUCACIÓN INFANTIL
-  </h1>
+  <h1>Educación Infantil · 5 años</h1>
 
-  <div class="subtitle">
-    Descubrimos, jugamos y aprendemos nuestra fe.
-  </div>
+  <p class="subtitle">
+    Descubrimos a Jesús, aprendemos juntos y cuidamos nuestra casa común.
+  </p>
 
 </header>
 
 
 <main class="contenedor">
 
-<section class="tarjeta-principal">
-
+<section class="curso">
 
   <div class="cabecera-curso">
 
-    <div class="icono">
-      🌼
-    </div>
+    <div class="icono-curso">🌳</div>
 
     <div>
-
-      <h2>
-        5 años
-      </h2>
-
-      <p>
-        Materiales y actividades para aprender juntos.
+      <h2>5 años</h2>
+      <p class="descripcion">
+        Fichas, actividades y materiales para descubrir nuestra fe.
       </p>
-
     </div>
 
   </div>
@@ -239,23 +228,13 @@ footer {
 
     <article class="unidad">
 
-      <div class="unidad-cabecera">
+         <div class="info">
 
-        <div class="numero">
-          1
+        <div class="numero">UNIDAD 1</div>
+
+        <div class="titulo">
+          Cuido mi regalo
         </div>
-
-        <h3>
-          Unidad 1
-        </h3>
-
-      </div>
-
-      <div class="contenido">
-
-        <p>
-          Material de la Unidad 1 para Educación Infantil de 5 años.
-        </p>
 
         <a
           class="boton"
@@ -263,8 +242,8 @@ footer {
           target="_blank">
           📄 Abrir PDF
         </a>
-<a class="boton" href="infantil-5-unidad-1-bn.pdf" target="_blank">
-  🖨️ Imprimir en blanco y negro
+<a class="boton" href="unidad-1-infantil-5-bn.pdf" target="_blank">
+    🖨️ Imprimir en blanco y negro
 </a>
       </div>
 
@@ -275,23 +254,13 @@ footer {
 
     <article class="unidad">
 
-      <div class="unidad-cabecera">
+           <div class="info">
 
-        <div class="numero">
-          2
+        <div class="numero">UNIDAD 2</div>
+
+        <div class="titulo">
+          El Belén
         </div>
-
-        <h3>
-          Unidad 2
-        </h3>
-
-      </div>
-
-      <div class="contenido">
-
-        <p>
-          Material de la Unidad 2 para Educación Infantil de 5 años.
-        </p>
 
         <a
           class="boton"
@@ -299,8 +268,8 @@ footer {
           target="_blank">
           📄 Abrir PDF
         </a>
-<a class="boton" href="infantil-5-unidad-2-bn.pdf" target="_blank">
-  🖨️ Imprimir en blanco y negro
+<a class="boton" href="unidad-2-infantil-5-bn.pdf" target="_blank">
+    🖨️ Imprimir en blanco y negro
 </a>
       </div>
 
@@ -311,32 +280,19 @@ footer {
 
     <article class="unidad">
 
-      <div class="unidad-cabecera">
+      <div class="info">
 
-        <div class="numero">
-          3
-        </div>
+        <div class="numero">UNIDAD 3</div>
 
-        <h3>
-          Unidad 3
-        </h3>
+       <div class="titulo">
+  Unidad 3
+</div>
 
-      </div>
-
-      <div class="contenido">
-
-        <p>
-          Material de la Unidad 3 para Educación Infantil de 5 años.
-        </p>
-
-        <a
-          class="boton"
-          href="unidad-3-infantil-5.pdf"
-          target="_blank">
-          📄 Abrir PDF
-        </a>
-<a class="boton" href="infantil-5-unidad-3-bn.pdf" target="_blank">
-  🖨️ Imprimir en blanco y negro
+<a class="boton" href="infantil-3-unidad-3.pdf" target="_blank">
+  📄 Abrir PDF
+</a>
+<a class="boton" href="infantil-3-unidad-3-bn.pdf" target="_blank">
+    🖨️ Imprimir en blanco y negro
 </a>
       </div>
 
@@ -347,30 +303,18 @@ footer {
 
 </section>
 
+
+<a class="volver" href="index.html">
+  ← Volver a Religión en nuestra aula
+</a>
+
 </main>
 
 
-<div class="volver">
-
-  <a href="infantil.html">
-    ← Volver a Educación Infantil
-  </a>
-
-</div>
-
-
 <footer>
-
-  <strong>
-    Religión en nuestra aula
-  </strong>
-
-  <p>
-    Un espacio para aprender, jugar y descubrir nuestra fe.
-  </p>
-
+  <strong>Religión en nuestra aula</strong><br>
+  Un espacio para aprender, jugar, crear y descubrir nuestra fe.
 </footer>
 
 </body>
-
 </html>
