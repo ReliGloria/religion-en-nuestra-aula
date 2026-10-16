@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Año Litúrgico | Gloria Reli</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 24px 16px;
+      font-family: Arial, sans-serif;
+      background: #fff8f0;
+      color: #40354b;
+    }
+
+    header {
+      max-width: 1100px;
+      margin: 0 auto 28px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #7952a3;
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 12px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .portada {
+      display: block;
+      width: 100%;
+      max-width: 760px;
+      height: auto;
+      margin: 24px auto;
+      border-radius: 20px;
+      box-shadow: 0 5px 18px rgba(70, 40, 90, 0.12);
+    }
+
+    .contenedor {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .tiempos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 20px;
+    }
+
+    .tarjeta {
+      background: white;
+      padding: 22px;
+      border-radius: 20px;
+      box-shadow: 0 4px 14px rgba(70, 40, 90, 0.10);
+      border-top: 7px solid #7952a3;
+    }
+
+    .tarjeta h2 {
+      margin-top: 0;
+      color: #7952a3;
+      font-size: 1.35rem;
+    }
+
+    .tarjeta p {
+      line-height: 1.6;
+    }
+
+    .adviento {
+      border-color: #7545a6;
+    }
+
+    .navidad {
+      border-color: #e5b83d;
+    }
+
+    .ordinario {
+      border-color: #4b9b60;
+    }
+
+    .cuaresma {
+      border-color: #7545a6;
+    }
+
+    .pascua {
+      border-color: #e5b83d;
+    }
+
+    .volver {
+      display: table;
+      margin: 32px auto 12px;
+      padding: 14px 24px;
+      background: #7952a3;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+
+    .volver:hover {
+      background: #5e3c83;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #786c83;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>📅 El Año Litúrgico</h1>
+    <p>
+      Durante el año, los cristianos celebramos la vida de Jesús,
+      desde su nacimiento hasta su Resurrección.
+      ¡Vamos a descubrir sus tiempos y sus colores!
+    </p>
+
+    <img
+      class="portada"
+      src="tarjeta-ano-liturgico.png"
+      alt="Ilustración educativa del Año Litúrgico"
+    >
+  </header>
+
+  <main class="contenedor">
+
+    <section class="tiempos">
+
+      <article class="tarjeta adviento">
+        <h2>🟣 Adviento</h2>
+        <p><strong>Color:</strong> morado.</p>
+        <p>Nos preparamos con alegría para celebrar el nacimiento de Jesús.</p>
+      </article>
+
+      <article class="tarjeta navidad">
+        <h2>⭐ Navidad</h2>
+        <p><strong>Color:</strong> blanco.</p>
+        <p>Celebramos que Jesús nace y viene a vivir entre nosotros.</p>
+      </article>
+
+      <article class="tarjeta ordinario">
+        <h2>🟢 Tiempo Ordinario</h2>
+        <p><strong>Color:</strong> verde.</p>
+        <p>Aprendemos de Jesús y descubrimos cómo vivir siguiendo su ejemplo.</p>
+      </article>
+
+      <article class="tarjeta cuaresma">
+        <h2>✝️ Cuaresma</h2>
+        <p><strong>Color:</strong> morado.</p>
+        <p>Nos preparamos para la Semana Santa con oración, ayuda y amor.</p>
+      </article>
+
+      <article class="tarjeta pascua">
+        <h2>🌼 Pascua</h2>
+        <p><strong>Color:</strong> blanco.</p>
+        <p>Celebramos la Resurrección de Jesús y la alegría de la vida nueva.</p>
+      </article>
+
+    </section>
+
+    <a class="volver" href="primaria.html">← Volver a Primaria</a>
+
+  </main>
+
+  <footer>
+    Gloria Reli · Aprendemos, descubrimos y vivimos nuestra fe
+  </footer>
+
+</body>
+</html>
