@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fiestas y celebraciones | Gloria Reli</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f7f5fb;
+      color: #39334a;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #7255a5, #a18acb);
+      color: white;
+      text-align: center;
+      padding: 42px 20px;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 20px 45px;
+    }
+
+    .intro {
+      max-width: 760px;
+      text-align: center;
+      margin: 0 auto 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 5px 18px rgba(65, 48, 95, 0.09);
+      border-top: 6px solid var(--color);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .icon {
+      font-size: 2.5rem;
+      margin-bottom: 8px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      color: #45365f;
+      font-size: 1.35rem;
+    }
+
+    .card p {
+      margin: 0 0 14px;
+    }
+
+    .fecha {
+      background: #f3f0f8;
+      padding: 7px 11px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      margin-top: auto;
+    }
+
+    .pdf {
+      display: inline-block;
+      margin-top: 15px;
+      color: #654394;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .pdf:hover {
+      text-decoration: underline;
+    }
+
+    .nota {
+      margin-top: 28px;
+      padding: 18px 20px;
+      background: #eee8f7;
+      border-radius: 14px;
+    }
+
+    .volver {
+      display: inline-block;
+      margin-top: 28px;
+      padding: 12px 20px;
+      background: #7255a5;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .volver:hover {
+      background: #594080;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #746b82;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🎉 Fiestas y celebraciones</h1>
+    <p>Conocemos las fiestas que nos ayudan a vivir y compartir nuestra fe.</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Celebramos juntos</h2>
+      <p>
+        A lo largo del año recordamos acontecimientos importantes
+        de la vida de Jesús y celebramos a María y a personas que
+        son ejemplo de fe, amor y servicio a los demás.
+      </p>
+    </section>
+
+    <section class="grid">
+
+      <article class="card" style="--color: #e2b83f;">
+        <div class="icon">🕊️</div>
+        <h2>1. Pentecostés</h2>
+        <p>
+          Celebramos la venida del Espíritu Santo sobre los apóstoles.
+          Nos recuerda que Dios nos acompaña y nos da fuerza para
+          compartir el mensaje de Jesús.
+        </p>
+        <div class="fecha">Se celebra cincuenta días después de Pascua.</div>
+        <!-- El enlace al PDF de Pentecostés se añadirá más adelante. -->
+      </article>
+
+      <article class="card" style="--color: #70a8d6;">
+        <div class="icon">💧</div>
+        <h2>2. Bautismo del Señor</h2>
+        <p>
+          Recordamos el bautismo de Jesús en el río Jordán,
+          cuando comienza su vida pública.
+        </p>
+        <div class="fecha">Se celebra después de la Epifanía.</div>
+        <!-- El enlace al PDF del Bautismo del Señor se añadirá más adelante. -->
+      </article>
+
+      <article class="card" style="--color: #d6ad38;">
+        <div class="icon">⭐</div>
+        <h2>3. Epifanía</h2>
+        <p>
+          Recordamos la visita de los Magos de Oriente a Jesús.
+          Esta fiesta nos enseña que Jesús viene para todas las personas.
+        </p>
+        <div class="fecha">6 de enero.</div>
+        <!-- El enlace al PDF de la Epifanía se añadirá más adelante. -->
+      </article>
+
+      <article class="card" style="--color: #8e79bd;">
+        <div class="icon">🌹</div>
+        <h2>4. Virgen del Pilar</h2>
+        <p>
+          Celebramos a María bajo la advocación del Pilar,
+          patrona de Aragón y muy querida en toda España.
+        </p>
+        <div class="fecha">12 de octubre.</div>
+        <!-- El enlace al PDF de la Virgen del Pilar se añadirá más adelante. -->
+      </article>
+
+      <article class="card" style="--color: #8e79bd;">
+        <div class="icon">🌸</div>
+        <h2>5. Virgen de la Almudena</h2>
+        <p>
+          Honramos a María bajo la advocación de la Almudena,
+          patrona de la ciudad de Madrid.
+        </p>
+        <div class="fecha">9 de noviembre.</div>
+        <!-- El enlace al PDF de la Virgen de la Almudena se añadirá más adelante. -->
+      </article>
+
+      <article class="card" style="--color: #70a36a;">
+        <div class="icon">🌾</div>
+        <h2>6. San Isidro</h2>
+        <p>
+          Conocemos a san Isidro Labrador, patrón de Madrid,
+          y recordamos su vida sencilla, su trabajo y su generosidad.
+        </p>
+        <div class="fecha">15 de mayo.</div>
+        <!-- El enlace al PDF de San Isidro se añadirá más adelante. -->
+      </article>
+
+    </section>
+
+    <div class="nota">
+      <strong>📚 Nuestros materiales</strong>
+      <p>
+        Prepararemos un PDF individual para cada celebración,
+        con información, ilustraciones y actividades adaptadas
+        a Infantil y Primaria.
+      </p>
+    </div>
+
+    <a class="volver" href="ano-liturgico.html">
+      ← Volver al Año Litúrgico
+    </a>
+  </main>
+
+  <footer>
+    Gloria Reli · Aprendemos y vivimos nuestra fe 💜
+  </footer>
+</body>
+</html>
