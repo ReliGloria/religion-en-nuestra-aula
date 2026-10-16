@@ -1,63 +1,131 @@
+
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Gloria Reli</title>
 
   <style>
-
     * {
       box-sizing: border-box;
     }
 
-    html,
     body {
       margin: 0;
-      padding: 0;
-      width: 100%;
-      min-height: 100%;
-      background: #fffaf2;
+      padding: 30px 20px;
+      font-family: Arial, sans-serif;
+      background: #f8f5fc;
+      color: #40354b;
+      text-align: center;
     }
 
-    body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    h1 {
+      color: #7952a3;
+      font-size: 2.4rem;
+      margin-bottom: 10px;
     }
 
-    .bienvenida {
+    .intro {
+      font-size: 1.1rem;
+      margin-bottom: 35px;
+    }
+
+    .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .tarjeta {
       display: block;
-      width: 100%;
-      max-width: 1600px;
+      padding: 16px;
+      background: white;
+      border-radius: 22px;
+      box-shadow: 0 5px 18px rgba(70, 40, 90, 0.12);
       text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
 
-    .bienvenida img {
-      display: block;
+    .tarjeta:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 9px 24px rgba(70, 40, 90, 0.18);
+    }
+
+    .tarjeta img {
       width: 100%;
       height: auto;
+      display: block;
+      border-radius: 14px;
     }
 
+    .tarjeta h2 {
+      color: #7952a3;
+      font-size: 1.4rem;
+      margin: 18px 0 8px;
+    }
+
+    .tarjeta p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #786c83;
+      font-size: 0.9rem;
+    }
   </style>
-
 </head>
-
 
 <body>
 
-  <a class="bienvenida" href="etapas.html">
+  <header>
+    <h1>Gloria Reli</h1>
+    <p class="intro">
+      Un espacio para aprender, descubrir y vivir la fe.
+    </p>
+  </header>
 
-    <img
-      src="bienvenida-gloria-reli.png"
-      alt="Gloria Reli. ¡Aprendemos juntos!"
-    >
+  <main class="tarjetas">
 
-  </a>
+    <a class="tarjeta" href="etapas.html">
+      <img
+        src="logo-gloria-reli.png"
+        alt="Gloria Reli. Aprende y comparte juntos"
+      >
+      <h2>Infantil y Primaria</h2>
+      <p>Descubre nuestros cursos y materiales educativos.</p>
+    </a>
+
+    <a class="tarjeta" href="ano-liturgico.html">
+      <img
+        src="tarjeta-ano-liturgico.png"
+        alt="Ilustración del Año Litúrgico"
+      >
+      <h2>Año Litúrgico</h2>
+      <p>Descubre los tiempos litúrgicos y sus colores.</p>
+    </a>
+
+    <a class="tarjeta" href="fiestas-celebraciones.html">
+      <img
+        src="tarjeta-fiestas-celebraciones.png"
+        alt="Fiestas y celebraciones cristianas"
+      >
+      <h2>Fiestas y celebraciones</h2>
+      <p>Conoce las fiestas de Jesús, María y los santos.</p>
+    </a>
+
+  </main>
+
+  <footer>
+    <p>Gloria Reli · Recursos para aprender y compartir</p>
+  </footer>
 
 </body>
-
 </html>
+
