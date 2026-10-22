@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
 :root{--ink:#28333b;--cream:#fffaf1;--sage:#a9c7b5;--gold:#e9c46a;--blue:#9fc4d6;--rose:#ead0df}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--cream);font-family:Nunito,sans-serif}a{text-decoration:none;color:inherit}
 .nav{max-width:1180px;margin:auto;padding:22px 28px;display:flex;justify-content:space-between;align-items:center}.brand{font-weight:800}.nav-links{display:flex;gap:20px;font-weight:800}
